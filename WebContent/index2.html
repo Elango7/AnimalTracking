@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href='css/gfont.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+        <script src="js/notify.js"></script>
+    
+  </head>
+
+  <body>
+    <!--This is hidden/shown automatically after Durandal loads. -->
+    <div class="container" style="display: none;">
+      <div class="overlay loading">
+        <i class="fa fa-spinner fa-5x fa-spin"></i><br/>
+        <h1>Loading...</h1>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="overlay">
+        <h1 class="header">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-fighter-jet fa-stack-1x fa-inverse rotate-45-left"></i>
+          </span>
+          GPSTracking
+        </h1>
+    
+      
+     <h3 class="form-signin-heading">Please sign in</h3>
+    
+          <div class="input-group margin-bottom-sm">
+            <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+            <input class="form-control" id="user" type="text" placeholder="Username" required autofocus>
+          </div>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-unlock-alt fa-fw"></i></span>
+            <input class="form-control" id="pass" type="password" placeholder="Password" required>
+          </div>
+    
+          <div>
+            <label class="checkbox" title="Check this to have your username saved for the next time you sign in.">
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+          </div>
+          <button class="btn btn-lg btn-primary btn-block" id="login"  >Sign in</button>
+         
+     <div class="footer">
+          <strong>Version: </strong>0.0.1.1245<em> (<abbr title="This version may have bugs or unfinished features.">&beta;eta</abbr>)</em>
+          <span class="pull-right">&copy; 2016  <a href="https://www.linkedin.com/in/elango-rv-5b06359b" target="_blank" title="Company">Elan</a></span>
+        </div>
+      </div>
+    </div> <!-- /container -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $( document ).ready(function() {
+    
+    	var lat1=50.673835,
+    	lat2=53.481508,
+    	lon1=-92.988281,
+    	lon2=34.980469;
+    	
+    	var finaldt=getDistanceFromLatLonInKm(lat1,lon1,lat2,lon2);
+    	console.log('Dist=',Math.round(finaldt));
+    	
+    	function getDistanceFromLatLonInKm(lat1,lon1,lat2,lon2) {
+    		  var R = 6371; // Radius of the earth in km
+    		  var dLat = deg2rad(lat2-lat1);  // deg2rad below
+    		  var dLon = deg2rad(lon2-lon1); 
+    		  var a = 
+    		    Math.sin(dLat/2) * Math.sin(dLat/2) +
+    		    Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * 
+    		    Math.sin(dLon/2) * Math.sin(dLon/2)
+    		    ; 
+    		  var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
+    		  var d = R * c; // Distance in km
+    		  return d;
+    		}
+
+    		function deg2rad(deg) {
+    		  return deg * (Math.PI/180)
+    		}
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    	
+    	
+    	
+    	
+    	
+  	  var tempLocation=[{
+			"device_id": "Animal_1",
+			"update_time": "2016-07-04 22:37:13",
+			"lan_lat": {
+				"lat": "12.9767336",
+				"lng": "80.2158342"
+			}
+		}, {
+			"device_id": "Animal_2",
+			"update_time": "2016-07-04 22:38:21",
+			"lan_lat": {
+				"lat": "13.0054229",
+				"lng": "80.1686173"
+			}
+		}, {
+			"device_id": "Animal_3",
+			"update_time": "2016-07-04 22:39:15",
+			"lan_lat": {
+				"lat": 13.0330632,
+				"lng": 80.1695323
+			}
+		}, {
+			"device_id": "Animal_4",
+			"update_time": "2016-07-27 00:27:58",
+			"lan_lat": {
+				"lat": 12.9767336,
+				"lng": 80.2158342
+			}
+		}];
+    	
+    	  var neighborhoods = [
+    		                      {lat: 13.76339578, lng: 79.32815552},
+    		                      {lat: 13.79473936, lng: 79.27871704}/* ,
+    		                      {lat: 13.87141335, lng: 79.24575806},
+    		                      {lat: 13.94273074, lng: 79.15512085} */
+    		                    ];
+    	
+	 	 	 // var temp= JSON.parse(tempLocation[1].lan_lat);
+	var t=tempLocation[1].lan_lat;
+    	var temp= {t};
+    	 // temp.latlan=tempLocation[1].lan_lat;
+    	console.log(neighborhoods[1]);
+    	console.log(tempLocation[1].lan_lat);
+
+    	
+    	 
+    	
+    	
+    	
+     	 $("#login").click(function(e) {
+  	        console.log( "LoginClick!" );
+
+    		 var usrName=$( "#user" ).val();
+    		 var pass=$( "#pass" ).val();
+    		 
+   	        console.log( "LoginClick!",!isEmpty(usrName) );
+
+    		 
+  	         
+    		 if (isEmpty(usrName)) {
+    			 
+    			 
+    			 $("#user").notify(
+	        			  "User Name Required..!", 
+	        			  { position:"right" }
+	        			);
+    			 
+    			  $( "#user" ).focus();
+
+					
+			}else if (isEmpty(pass)) {
+				
+				
+				$("#pass").notify(
+	        			  "Pasword Required..!", 
+	        			  { position:"right" }
+	        			);
+				
+  			  $( "#pass" ).focus();
+
+			}else if (!isEmpty(usrName) && !isEmpty(pass)) {
+ 	        	
+ 	        
+ 	        	
+				console.log('Not Empty');
+			    window.location.assign("/GpsTrackingSys/New.html");
+			    
+			    
+			}else{
+				console.log(' Empty');
+				$("#pass").notify(
+	        			  "Pls Enter UserName And Pasword...!", 
+	        			  { position:"right" }
+	        			);
+				
+				
+			}
+ 	        
+
+  	    });
+    	 
+    	 
+    	 
+    	 function isEmpty(str) {
+    		    return (!str || 0 === str.length);
+    		}
+    	 
+    	
+ 
+
+
+    	});
+    
+    
+    
+    </script>
+  </body>
+</html>

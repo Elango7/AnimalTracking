@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="armeabi-v7a,armeabi"
+    api-level="19"
+    density="xhdpi"
+    format="7"
+    timestamp="9648803119018"
+    token="5613672861896169032" >
+
+    <task
+        name="javac"
+        duration="4486" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="1937" />
+    <task
+        name="verifier"
+        duration="429" />
+
+    <artifact
+        location="E:\Projects\locationtracking\FarmersConnect\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="9648803119018" >
+        <artifact
+            location="E:\Projects\locationtracking\FarmersConnect\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

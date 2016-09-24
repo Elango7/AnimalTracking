@@ -1,0 +1,14 @@
+[19-Aug-2016 17:36:39 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'animaltr_perumal'@'localhost' to database 'animaltr_gpstrack' in /home/animaltrack/public_html/locationtracking/Util.php on line 18
+[19-Aug-2016 17:36:39 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/animaltrack/public_html/locationtracking/TrackingRestHandler.php on line 89
+[19-Aug-2016 17:37:27 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'animaltr_perumal'@'184.164.158.253' (using password: YES) in /home/animaltrack/public_html/locationtracking/Util.php on line 18
+[19-Aug-2016 17:37:27 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/animaltrack/public_html/locationtracking/TrackingRestHandler.php on line 89
+[19-Aug-2016 17:39:20 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'animaltr_perumal'@'184.164.158.253' (using password: YES) in /home/animaltrack/public_html/locationtracking/Util.php on line 18
+[19-Aug-2016 17:39:20 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/animaltrack/public_html/locationtracking/TrackingRestHandler.php on line 90
+[19-Aug-2016 17:39:20 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'animaltr_perumal'@'184.164.158.253' (using password: YES) in /home/animaltrack/public_html/locationtracking/Util.php on line 18
+[19-Aug-2016 17:39:20 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/animaltrack/public_html/locationtracking/TrackingRestHandler.php on line 92
+[19-Aug-2016 17:39:20 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/animaltrack/public_html/locationtracking/TrackingRestHandler.php on line 100
+[19-Aug-2016 17:42:12 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'animaltr_perumal'@'localhost' to database 'animaltr_gpstrack' in /home/animaltrack/public_html/locationtracking/Util.php on line 18
+[19-Aug-2016 17:42:12 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/animaltrack/public_html/locationtracking/TrackingRestHandler.php on line 90
+[19-Aug-2016 17:42:12 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'animaltr_perumal'@'localhost' to database 'animaltr_gpstrack' in /home/animaltrack/public_html/locationtracking/Util.php on line 18
+[19-Aug-2016 17:42:12 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/animaltrack/public_html/locationtracking/TrackingRestHandler.php on line 92
+[19-Aug-2016 17:42:12 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/animaltrack/public_html/locationtracking/TrackingRestHandler.php on line 100

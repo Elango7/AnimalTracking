@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\Projects\\locationtracking\\FarmersConnect\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "E:\\Projects\\locationtracking\\FarmersConnect\\app\\src\\main\\res\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "E:\\Projects\\locationtracking\\FarmersConnect\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_farmer_details.xml",
+        "source": "E:\\Projects\\locationtracking\\FarmersConnect\\app\\src\\main\\res\\menu\\menu_farmer_details.xml"
+    },
+    {
+        "merged": "E:\\Projects\\locationtracking\\FarmersConnect\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_add_farmer.xml",
+        "source": "E:\\Projects\\locationtracking\\FarmersConnect\\app\\src\\main\\res\\menu\\menu_add_farmer.xml"
+    }
+]

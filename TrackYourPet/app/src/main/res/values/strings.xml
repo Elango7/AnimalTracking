@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">FarmersConnect</string>
+
+    <!--Activity Name-->
+    <string name="addFarmer">Add Farmer</string>
+    <string name="editFarmer">Edit Farmer</string>
+
+    <!-- Fragment Name -->
+    <string name="personal_info">Personal Details</string>
+    <string name="communication">Enrollement</string>
+    <string name="deleteFarmer">Delete Farmer</string>
+    <string name="profile">Profile Details</string>
+    <string name="other">Other Details</string>
+    <string name="localData">Available Local Data</string>
+
+    <!-- Label Strings -->
+    <string name="input_name">Name*</string>
+    <string name="input_father_name">Father\'s Name</string>
+    <string name="input_mother_name">Mother\'s Name</string>
+    <string name="gender">Gender*</string>
+    <string name="genderMale">Male</string>
+    <string name="genderFemale">Female</string>
+    <string name="input_dob">DOB*</string>
+    <string name="input_no_family_members">No of Family Members</string>
+    <string name="input_aadhar_no">Aadhaar No*</string>
+    <string name="input_phone_no">Phone Number*</string>
+    <string name="input_alt_phone_no">Alt Phone Number</string>
+    <string name="input_address">Device Id</string>
+    <string name="input_pincode">Animal Name</string>
+    <string name="input_dictrict">Name*</string>
+    <string name="input_landmark">Landmark</string>
+    <string name="input_city">City*</string>
+    <string name="input_state">State*</string>
+    <string name="occupation">Occupation*</string>
+    <string name="education">Education*</string>
+    <string name="occupation_details">Occupation Details</string>
+    <string name="gross_inome">Gross Income</string>
+    <string name="action_search">Search</string>
+    <string name="next">Save</string>
+    <string name="Sending">Sending Location Deatils...</string>
+    <string name="save">Save</string>
+    <string name="previous">Cancel</string>
+
+    <!-- Notification and Error MEssages -->
+    <string name="errorScan">Error in Scanning! Please Scan again</string>
+    <string name="cancelScan">Cancelled Scanning</string>
+    <string name="deleteQuestion">Do you want to delete?</string>
+    <string name="pleaseEnterValue">Please Enter a Value</string>
+    <string name="deleteSuccess">Deleted Successfully</string>
+    <string name="pleaseSelectValue">Please Select a Value</string>
+    <string name="onlyString">Only text allowed</string>
+    <string name="pushSuccess">Data Successfully upload to Server</string>
+    <string name="addFarmerDetails">Adding New Farmer</string>
+    <string name="savingFarmerDetails">Saving Animal Details</string>
+    <string name="cantUpload">Can\'t Upload to Server. Please Check your Internet Connection!</string>
+    <string name="deletingFarmerDetails">Removing Farmer Details</string>
+    <string name="saveSuccess">Farmer Details Saved Successfully</string>
+    <string name="addSuccess">New Farmer Added Successfully</string>
+    <string name="pleaseCheckInternetConnection">Please Check your Internet Connection</string>
+    <string name="savedlocal">No Internet! Saved locally</string>
+    <string name="noFarmersFound">No Farmers found. Try adding a farmer by clicking the + button</string>
+    <string name="onlyNumber">Only numbers allowed</string>
+    <string name="invalidPhone">Please type a valid phone number</string>
+    <string name="farmer">Farmer Details</string>
+
+
+    <!-- Array Items-->
+    <string-array name="marital_array">
+        <item>Married</item>
+        <item>Unmarried</item>
+    </string-array>
+    <string-array name="occupation_array">
+        <item>Agriculture</item>
+        <item>Salaried</item>
+        <item>Self Employed</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="agri_array">
+        <item>Less than 5 acres</item>
+        <item> Greater than 5 acres</item>
+        <item>Nil</item>
+    </string-array>
+    <string-array name="other_array">
+        <item>House Wife</item>
+        <item>Politician</item>
+        <item>Retired</item>
+        <item>Student</item>
+    </string-array>
+    <string-array name="salaried_array">
+        <item>Govt</item>
+        <item>Mnc</item>
+        <item>Proprietorship</item>
+        <item>Partnership</item>
+        <item>Private Ltd</item>
+        <item>Public Ltd</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="self_employed_array">
+        <item>CA</item>
+        <item>Consultant</item>
+        <item>Doctor</item>
+        <item>Engineer</item>
+        <item>Lawyer</item>
+        <item>Agriculture</item>
+        <item>Manufacturing</item>
+        <item>Real Estate</item>
+        <item>Retailing</item>
+        <item>Services</item>
+        <item>Trading</item>
+        <item>Stock Broker</item>
+        <item>Business</item>
+        <item>Investment</item>
+        <item>Rent</item>
+        <item>Pension</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="education_array">
+        <item>Graduate</item>
+        <item>Post Graduate</item>
+        <item>Under Graduate</item>
+    </string-array>
+    <string-array name="gross_income_array">
+        <item>Greater than 10 lakhs</item>
+        <item>1-10 lakhs</item>
+        <item>Nil</item>
+    </string-array>
+    <string-array name="animal_name">
+        <item>Select Type</item>
+        <item>Dog</item>
+        <item>Elephant</item>
+        <item>Bird</item>
+        <item>Camel</item>
+        <item>Horse</item>
+    </string-array>
+
+</resources>

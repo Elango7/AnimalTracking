@@ -1,0 +1,16 @@
+# Turn rewrite engine on
+Options +FollowSymlinks
+RewriteEngine on
+Header add Access-Control-Allow-Origin "*"
+Header add Access-Control-Allow-Headers "origin, x-requested-with, content-type"
+Header add Access-Control-Allow-Methods "PUT, GET, POST, DELETE, OPTIONS"
+
+# map neat URL to internal URL
+RewriteRule ^tracking/locationAll/$   RestController.php?view=locationAll [nc,qsa]
+RewriteRule ^tracking/idleDevice/([A-Za-z0-9_]+)/$   RestController.php?view=idleDevice&idleMins=$1 [nc,qsa]
+RewriteRule ^tracking/animals/$   RestController.php?view=animals [nc,qsa]
+RewriteRule ^tracking/deleteLocation/([A-Za-z0-9_]+)/$   RestController.php?view=deleteLocation&deviceId=$1 [nc,qsa]
+RewriteRule ^tracking/single_device_info/([A-Za-z0-9_]+)/$   RestController.php?view=single&id=$1 [nc,qsa]
+RewriteRule ^tracking/insertLocation/$   RestController.php?view=insert&userName=$1 [nc,qsa]
+RewriteRule ^tracking/insertAnimalInfo/$   RestController.php?view=insertAnimalInfo&userName=$1 [nc,qsa]
+RewriteRule ^tracking/login/([A-Za-z0-9_]+)/([A-Za-z0-9_]+)/$   RestController.php?view=login&userName=$1&password=$2 [nc,qsa]
